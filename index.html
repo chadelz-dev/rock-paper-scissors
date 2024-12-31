@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js.js" defer></script>
+    <title>Document</title>
+
+</head>
+<body>
+<p>
+  Open the DevTools Console and then click Start Game. <br><br> After selecting a choice, click the Confirm Button to submit.
+</p>
+    <!-- A modal dialog containing a form -->
+<dialog id="rpsDialog">
+    <form>
+      <p>
+        <label>
+          Choose One For This Round:
+          <select>
+            <option value="default">select...</option>
+            <option>Scissors</option>
+            <option>Paper</option>
+            <option>Rock</option>
+          </select>
+        </label>
+      </p>
+      <div>
+        <button value="cancel" formmethod="dialog">Cancel</button>
+        <button id="confirmBtn" value="default">Confirm</button>
+      </div>
+    </form>
+  </dialog>
+
+  <p>
+    <button id="showDialog">Start Game</button>
+  </p>
+
+  <output></output>
+
+  <p id="gameMessage"></p> <!-- Placeholder for messages -->
+
+
+
+</body>
+</html>
+

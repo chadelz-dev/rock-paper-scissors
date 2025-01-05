@@ -1,0 +1,100 @@
+
+-- (git) Working with Branches:
+
+
+-- Create a New Branch and Switch to it
+
+git checkout -b <branch_name>
+
+ - creates a new branch.
+
+ -  and switches branches from main to the new one.
+
+
+-- Only Create a New Branch
+
+git branch <branch_name>
+
+ - creates a new branch.
+
+// ////////////////////////////////////////////////////////////////////////////
+
+
+-- Change to a Branch
+
+git checkout <branch_name>
+
+// ////////////////////////////////////////////////////////////////////////////
+
+
+-- See All Existing Branches
+
+git branch 
+
+ - the branch that you are currently on will be indicated by an asterisks.
+
+// ////////////////////////////////////////////////////////////////////////////
+
+
+-- Merge Branches 
+
+git merge <branch_name>
+
+ - this will take the changes you made on <branch_name> 
+ 
+ - and merge them into the branch that you are currently on:
+
+   - so to merge into the main branch, make sure you are on the main branch.
+
+// ////////////////////////////////////////////////////////////////////////////
+
+
+-- Push a Branch to Github
+
+git push origin <branch_name>
+
+ - pushes the branch to Github 
+
+// ////////////////////////////////////////////////////////////////////////////
+
+
+-- Delete Branches 
+
+git branch -d <branch_name>
+
+ - delete the branch if it has already been merged into the main branch
+
+
+git branch -D <branch_name>
+
+ - delete the branch even if it has not been merged into the main branch
+
+// ////////////////////////////////////////////////////////////////////////////
+
+
+-- Commit Branches
+
+ - when you commit a branch, 
+    you are committing the changes that you made to that branch.
+
+ - you commit the same way you would usually commit with the difference being:
+
+   - instead of commiting to main, as in, at the end of the command,
+
+   - you commit to the branch name at the end of the command, exs: 
+
+
+-- committing to the main branch:
+
+git push origin main 
+
+
+-- committing to a branch:
+
+git push origin <branch_name>
+
+ - (git branch) make sure you are on the correct branch beforehand.
+
+ - (git checkout <branch_name>) if you need to move to it.
+
+ 
